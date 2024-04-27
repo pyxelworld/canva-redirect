@@ -1,9 +1,12 @@
 <script>
-            if (screen.width <= 699) {
-        document.location = "https://msha.ke/pyxel/";
-      }
-      if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-        location.replace("https://msha.ke/pyxel/);
-      }
+            function redirecionar() {
+  var isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    window.location.href = "https://msha.ke/pyxel/";
+  } else {
+    window.location.href = "https://pyxel.my.canva.site/";
+  }
+}
+
+redirecionar();
 </script>
-<script>window.location.replace("https://pyxel.my.canva.site/");</script>
